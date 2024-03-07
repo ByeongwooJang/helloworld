@@ -5,7 +5,7 @@
 replicaCount: 3
 
 image:
-  repository: shyoon0553/qa-krce-gasp-helloworld
+  repository: onestorecorporation/qa-krce-gasp-helloworld
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "0.0.1"
@@ -95,7 +95,7 @@ resources: {}
 
 autoscaling:
   enabled: false
-  minReplicas: 1
+  minReplicas: 3
   maxReplicas: 100
   targetCPUUtilizationPercentage: 80
   # targetMemoryUtilizationPercentage: 80
