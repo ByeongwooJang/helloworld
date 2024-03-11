@@ -4,7 +4,6 @@ metadata:
   name: {{ include "qa-krce-gasp-helloworld.fullname" . }}
   labels:
     {{- include "qa-krce-gasp-helloworld.labels" . | nindent 4 }}
-    argocd.argoproj.io/sync-options: Validate=false
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
